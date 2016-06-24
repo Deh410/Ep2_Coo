@@ -1,3 +1,4 @@
+package gerenciadores;
 
 public class DiaEMes {
 	int dia;
