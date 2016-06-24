@@ -11,9 +11,20 @@ package gerenciadores;
 
 public interface AtividadeFactory {
 	public void setLocal();
+	public String getLocal();
+	
 	public String toString();
+	
 	public void setHorario();
+	public int getHorarioInicio();
+	public int getHorarioFim();
+	
 	public void setData();
+	public int getDataDia();
+	public int getDataMes();
+	
 	public void setQtdAlunos();
+	public int getQtdAlunos();
+	
 	public void makeAtivGeral();
 }

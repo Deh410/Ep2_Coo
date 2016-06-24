@@ -11,6 +11,7 @@ public class Analogica implements AtividadeFactory {
 	private int dataMes;
 	private int qtdAlunos;
 	Scanner sc = new Scanner(System.in);
+	public static Mes m = new Mes();
 
 	public void setLocal() {
 		boolean ok = false;
@@ -84,12 +85,36 @@ public class Analogica implements AtividadeFactory {
 	public String toString() {
 		return "Local: " + local + "\nData: " + dataDia + "/" + dataMes
 				+ "\nHorario: " + horarioInicio + "-" + horarioTermino
-				+ "\nQuantidade de Alunos maxima: " + qtdAlunos;
+				+ "\nQuantidade maxima de Alunos: " + qtdAlunos;
 	}
 
 	public void makeAtivGeral() {
 		AtividadeDigital digital = new AtividadeDigital();
 		digital.makeAtividade();
+	}
+
+	public String getLocal() {
+		return this.local;
+	}
+
+	public int getHorarioInicio() {
+		return this.horarioInicio;
+	}
+
+	public int getHorarioFim() {
+		return this.horarioTermino;
+	}
+
+	public int getDataDia() {
+		return this.dataDia;
+	}
+
+	public int getDataMes() {
+		return this.dataMes;
+	}
+
+	public int getQtdAlunos() {
+		return this.qtdAlunos;
 	}
 
 }

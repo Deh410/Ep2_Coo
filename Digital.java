@@ -54,8 +54,6 @@ public class Digital implements AtividadeFactory {
 				this.horarioTermino = horarioTermino;
 			}
 		}
-		Dia d = new Dia();
-		/*Terminar de arrumar classe MES*/
 	}
 
 	public void setData() {
@@ -94,5 +92,31 @@ public class Digital implements AtividadeFactory {
 		AtividadeDigital digital = new AtividadeDigital();
 		digital.makeAtividade();
 	}
+
+	public String getLocal() {
+		return this.local;
+	}
+
+	public int getHorarioInicio() {
+		return this.horarioInicio;
+	}
+
+	public int getHorarioFim() {
+		return this.horarioTermino;
+	}
+
+	public int getDataDia() {
+		return this.dataDia;
+	}
+
+	public int getDataMes() {
+		return this.dataMes;
+	}
+
+	public int getQtdAlunos() {
+		return this.qtdAlunos;
+	}
+
+	
 
 }
